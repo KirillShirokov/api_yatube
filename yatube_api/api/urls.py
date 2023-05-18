@@ -11,7 +11,6 @@ router.register('posts', PostViewSet, basename='posts')
 router.register('posts/(?P<post_id>\\d+)/comments', CommentViewSet,
                 basename='comments')
 
-
 urlpatterns = [
     path('v1/', include(router.urls)),
 ]
